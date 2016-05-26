@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/zarusz/LightDataInterface</licenseUrl>
+    <projectUrl>https://github.com/zarusz/LightDataInterface/blob/master/LICENSE</projectUrl>
+    <iconUrl>https://github.com/zarusz/LightDataInterface/blob/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial version</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Data DataAccess EF EntityFramework NHibernate ORM Facade Interface</tags>
+  </metadata>
+</package>
