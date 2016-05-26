@@ -1,46 +1,27 @@
 using System;
 using Common.Logging;
+using LightDataInterface.Core;
 
 namespace LightDataInterface.EntityFramework
 {
-    public class EfDataSessionFactory : IDataSessionFactory
+    public class EfDataSessionFactory : DataSessionFactory
     {
         private static readonly ILog Log = LogManager.GetLogger<EfDataSessionFactory>();
 
-        public string DefaultContextName { get; protected set; }
-        public Func<string, IDataSession> FactoryMethod { get; protected set; }
+        protected Func<string, IDataSession> FactoryMethod { get; set; }
 
-        public EfDataSessionFactory(string defaultContextName, Func<string, IDataSession> factoryMethod)
+        public EfDataSessionFactory(Func<string, IDataSession> factoryMethod)
+            : base(Log)
         {
-            Log.Debug("Creation.");
-            DefaultContextName = defaultContextName;
             FactoryMethod = factoryMethod;
-
-            //ThreadDataContextHolder.DefaultContextName = defaultContextName;
         }
 
-        #region Implementation of IDisposable
+        #region Overrides of DataSessionFactory
 
-        public void Dispose()
+        protected override IDataSession CreateDataSessionInternal(string name)
         {
-            Log.Debug("Disposing.");
-        }
-
-        public virtual IDataSession CreateDataSession(string name = null)
-        {
-            if (name == null)
-            {
-                name = DefaultContextName;
-            }
-
-            Log.Debug(x => x("Creating DataSession named {0}.", name));
-            var dataContext = FactoryMethod(name);
-            if (dataContext == null)
-            {
-                throw new DataAccessException($"The DataSession name {name} is not recognized. Make sure you configured the DataAccess later properly.");
-            }
-
-            return dataContext;
+            var dataSession = FactoryMethod(name);
+            return dataSession;
         }
 
         #endregion

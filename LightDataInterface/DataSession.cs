@@ -4,14 +4,14 @@ namespace LightDataInterface
 {
     public class DataSession
     {
-        private static Func<IDataSession> _provider;
+        private static Func<string, IDataSession> _provider;
 
-        public static void SetProvider(Func<IDataSession> provider)
+        public static void SetProvider(Func<string, IDataSession> provider)
         {
             _provider = provider;
         } 
 
 
-        public static IDataSession Current => _provider();
+        public static IDataSession Current(string name = null) => _provider(name);
     }
 }

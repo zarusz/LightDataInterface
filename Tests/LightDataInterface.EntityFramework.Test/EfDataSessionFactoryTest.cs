@@ -7,7 +7,6 @@ namespace LightDataInterface.EntityFramework.Test
     [TestClass]
     public class EfDataSessionFactoryTest
     {
-        private const string DefaultContextName = "default";
         private EfDataSessionFactory _efDataSessionFactory;
         private Mock<Func<string, IDataSession>> _factoryMethodMock;
         private Mock<IDataSession> _dataSessionMock;
@@ -16,7 +15,7 @@ namespace LightDataInterface.EntityFramework.Test
         public void Setup()
         {
             _factoryMethodMock = new Mock<Func<string, IDataSession>>();
-            _efDataSessionFactory = new EfDataSessionFactory(DefaultContextName, _factoryMethodMock.Object);
+            _efDataSessionFactory = new EfDataSessionFactory(_factoryMethodMock.Object);
             _dataSessionMock = new Mock<IDataSession>();
         }
 
@@ -39,19 +38,6 @@ namespace LightDataInterface.EntityFramework.Test
 
             // assert
             Assert.IsTrue(thrown, "DataAccessException was not thrown.");
-        }
-
-        [TestMethod]
-        public void It_uses_the_default_name()
-        {
-            // arrange
-            _factoryMethodMock.Setup(x => x(DefaultContextName)).Returns(_dataSessionMock.Object);
-
-            // act
-            var dataSession = _efDataSessionFactory.CreateDataSession();
-
-            // assert
-            Assert.AreSame(_dataSessionMock.Object, dataSession);
         }
 
         [TestMethod]

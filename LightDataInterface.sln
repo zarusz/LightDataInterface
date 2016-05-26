@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3FEEA467
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.EntityFramework.Test", "Tests\LightDataInterface.EntityFramework.Test\LightDataInterface.EntityFramework.Test.csproj", "{E539ADBE-475F-4FE1-B75F-AC8F2E4230C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core", "LightDataInterface.Core\LightDataInterface.Core.csproj", "{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.Autofac", "LightDataInterface.Extra.Autofac\LightDataInterface.Extra.Autofac.csproj", "{07B75B2F-E10E-497E-8AB4-D05435A2459C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{E539ADBE-475F-4FE1-B75F-AC8F2E4230C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E539ADBE-475F-4FE1-B75F-AC8F2E4230C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E539ADBE-475F-4FE1-B75F-AC8F2E4230C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

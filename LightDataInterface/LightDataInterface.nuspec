@@ -6,8 +6,8 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/zarusz/LightDataInterface</licenseUrl>
-    <projectUrl>https://github.com/zarusz/LightDataInterface/blob/master/LICENSE</projectUrl>
+    <licenseUrl>https://github.com/zarusz/LightDataInterface/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/zarusz/LightDataInterface</projectUrl>
     <iconUrl>https://github.com/zarusz/LightDataInterface/blob/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>

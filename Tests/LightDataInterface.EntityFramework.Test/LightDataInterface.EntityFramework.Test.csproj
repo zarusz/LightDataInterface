@@ -79,6 +79,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\LightDataInterface.Core\LightDataInterface.Core.csproj">
+      <Project>{8e76274a-d27c-46dc-ae8a-7419e6bdc9a5}</Project>
+      <Name>LightDataInterface.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\LightDataInterface.EntityFramework\LightDataInterface.EntityFramework.csproj">
       <Project>{f406aa4f-7c0e-457c-809b-f9736bd97e2c}</Project>
       <Name>LightDataInterface.EntityFramework</Name>

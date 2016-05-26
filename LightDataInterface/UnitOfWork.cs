@@ -4,14 +4,14 @@ namespace LightDataInterface
 {
     public class UnitOfWork
     {
-        private static Func<IUnitOfWork> _provider;
+        private static Func<string, IUnitOfWork> _provider;
 
-        public static void SetProvider(Func<IUnitOfWork> provider)
+        public static void SetProvider(Func<string, IUnitOfWork> provider)
         {
             _provider = provider;
         }
 
 
-        public static IUnitOfWork Current => _provider();
+        public static IUnitOfWork Current(string name) => _provider(name);
     }
 }

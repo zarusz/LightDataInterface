@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LightDataInterface")]
+[assembly: AssemblyTitle("LightDataInterface.Extra.Autofac")]
 [assembly: AssemblyDescription("Common interface to work with your favorite DAL framework.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("zarusz")]
-[assembly: AssemblyProduct("LightDataInterface")]
+[assembly: AssemblyProduct("LightDataInterface.Extra.Autofac")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a325b54b-8d02-4925-9600-c24d2a138722")]
+[assembly: Guid("07b75b2f-e10e-497e-8ab4-d05435a2459c")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyInformationalVersion("0.3.7-alpha")]
+[assembly: AssemblyInformationalVersion("0.3.5-alpha")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

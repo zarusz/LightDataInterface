@@ -51,5 +51,6 @@ namespace LightDataInterface.EntityFramework
 
         public IDataSession DataSession => this;
         public bool AutoCommit { get; set; }
+
     }
 }
