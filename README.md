@@ -34,7 +34,7 @@ Package: `LightDataInterface`
 
 ### WebApi integration
 
-`[UnitOfWork]` attribute wraps controller's action in a transaction (`UnitOfWork`). When all executes fine the transaction is commited automatically, otherwise when an exception occurs the transaction is rolled back automatically. 
+`[UnitOfWork]` attribute wraps controller's action in a transaction (`UnitOfWork`). When the action executes successfully the transaction is commited automatically, otherwise when an exception occurs the transaction is rolled back automatically. 
 
 ```CS
 [HttpPost]
