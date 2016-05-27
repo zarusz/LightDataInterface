@@ -7,7 +7,8 @@ namespace LightDataInterface.EntityFramework
     public class EfUnitOfWork<T> : BaseUnitOfWork
         where T : DbContext
     {
-        private static readonly ILog Log = LogManager.GetLogger<EfDataSession<T>>();
+        // ReSharper disable once StaticMemberInGenericType
+        private static readonly ILog Log = LogManager.GetLogger(typeof(EfUnitOfWork<>));
 
         private DbContextTransaction _tx;
 

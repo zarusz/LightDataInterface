@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.WebApi", "LightDataInterface.Extra.WebApi\LightDataInterface.Extra.WebApi.csproj", "{8C937BE7-303E-43B5-BB61-4F22CD9C4108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core.Test", "LightDataInterface.Core.Test\LightDataInterface.Core.Test.csproj", "{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +49,16 @@ Global
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E539ADBE-475F-4FE1-B75F-AC8F2E4230C6} = {3FEEA467-0E5D-44AD-8ECA-1F8E66BEDF04}
+		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A} = {3FEEA467-0E5D-44AD-8ECA-1F8E66BEDF04}
 	EndGlobalSection
 EndGlobal
