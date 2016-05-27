@@ -1,9 +1,15 @@
 # LightDataInterface
 
+##Benefits
+
+* Common and light DAL interfaces make your application layer code independent of the specific DAL technology.
+* Easier to switch from an existing DAL implementation (e.g. NHibernate) to another (e.g. Entity Framework).
+* Eliminates boilerplate when coordinating DAL (e.g. executing unit of work in a transaction).
+
 ##Features
 
 ###Common interfaces
-The DAL client code (e.g. application layer) uses minimalistic and straightfoward interfaces to coordinate the data access layer. No dependencies on any particular framework (e.g. NHibernate, ADO.NET or EntityFramework).
+The DAL client code (e.g. application layer) uses minimalistic and straightforward interfaces to coordinate the data access layer. No dependencies on any particular framework (e.g. NHibernate, ADO.NET or EntityFramework).
 
 * `IDataSession`
 * `IUnitOfWork`
