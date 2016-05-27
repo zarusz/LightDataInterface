@@ -23,7 +23,7 @@ When you decide to move to a different data access implementation or have two di
 
 Package: `LightDataInterface`
 
-###Providers for your favorite data access libraries
+###Providers for your favorite data access framework
 
 * Adapter for EntityFramework
   * Package: `LightDataInterface.EntityFramework`
