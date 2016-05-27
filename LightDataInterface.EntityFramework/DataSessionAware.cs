@@ -17,7 +17,9 @@ namespace LightDataInterface.EntityFramework
         /// <summary>
         /// Returns the current named <see cref="DbContext"/> you can use in your repository implementations.
         /// </summary>
-        protected TDbContext DbContext => this.DbContext<TDbContext>();
+        protected TDbContext DbContext => this.GetDbContext<TDbContext>();
+
+        protected IDataSession DataSession => this.GetDataSession();
 
         #region Implementation of IDataSessionAware
 

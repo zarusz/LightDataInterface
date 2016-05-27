@@ -4,7 +4,7 @@ using LightDataInterface.Core;
 
 namespace LightDataInterface.EntityFramework
 {
-    public class EfDataSessionFactory : DataSessionFactory
+    public class EfDataSessionFactory : BaseDataSessionFactory
     {
         private static readonly ILog Log = LogManager.GetLogger<EfDataSessionFactory>();
 
@@ -16,7 +16,7 @@ namespace LightDataInterface.EntityFramework
             FactoryMethod = factoryMethod;
         }
 
-        #region Overrides of DataSessionFactory
+        #region Overrides of BaseDataSessionFactory
 
         protected override IDataSession CreateDataSessionInternal(string name)
         {

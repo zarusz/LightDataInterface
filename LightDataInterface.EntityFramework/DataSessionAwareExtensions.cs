@@ -5,10 +5,10 @@ namespace LightDataInterface.EntityFramework
 {
     public static class DataSessionAwareExtensions
     {
-        public static TDbContext DbContext<TDbContext>(this IDataSessionAware dataSessionAware)
+        public static TDbContext GetDbContext<TDbContext>(this IDataSessionAware dataSessionAware)
             where TDbContext : DbContext
         {
-            var dataSession = dataSessionAware.DataSession();
+            var dataSession = dataSessionAware.GetDataSession();
             var dbContext = dataSession.DbContext<TDbContext>();
             return dbContext;
         }

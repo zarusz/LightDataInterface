@@ -2,15 +2,14 @@ using Common.Logging;
 
 namespace LightDataInterface.Core
 {
-    public abstract class DataSessionFactory : IDataSessionFactory
+    public abstract class BaseDataSessionFactory : IDataSessionFactory
     {
         private readonly ILog _log;
 
-        protected DataSessionFactory(ILog log)
+        protected BaseDataSessionFactory(ILog log)
         {
             _log = log;
             _log.Debug("Creation.");
-            //ThreadDataContextHolder.DefaultName = DefaultName;
         }
 
         #region Implementation of IDisposable
@@ -24,7 +23,7 @@ namespace LightDataInterface.Core
 
         public IDataSession CreateDataSession(string name)
         {
-            _log.Debug(x => x("Creating DataSession named {0}.", name));
+            _log.Debug(x => x("Creating GetDataSession named {0}.", name));
             var dataContext = CreateDataSessionInternal(name);
             if (dataContext == null)
             {

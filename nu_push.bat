@@ -1,6 +1,7 @@
 set dist_folder=packages-dist
-set nuget_source=https://www.nuget.org
-LightDataInterface.0.3.0-alpha.nupkg
+rem set nuget_source=https://www.nuget.org
+set nuget_source=local
 nuget push .\%dist_folder%\LightDataInterface.0.3.*-alpha.nupkg -Source %nuget_source%
 nuget push .\%dist_folder%\LightDataInterface.Core.0.3.*-alpha.nupkg -Source %nuget_source%
 nuget push .\%dist_folder%\LightDataInterface.EntityFramework.0.3.*-alpha.nupkg -Source %nuget_source%
+nuget push .\%dist_folder%\LightDataInterface.Extra.WebApi.0.3.*-alpha.nupkg -Source %nuget_source%

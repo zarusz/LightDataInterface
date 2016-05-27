@@ -2,9 +2,9 @@ namespace LightDataInterface.Core
 {
     public static class DataSessionAwareExtensions
     {
-        public static IDataSession DataSession(this IDataSessionAware dataSessionAware)
+        public static IDataSession GetDataSession(this IDataSessionAware dataSessionAware)
         {
-            var dataSession = LightDataInterface.DataSession.Current(dataSessionAware.DataName);
+            var dataSession = DataSession.Current(dataSessionAware.DataName);
             return dataSession;
         }
     }
