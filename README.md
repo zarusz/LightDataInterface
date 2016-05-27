@@ -2,9 +2,11 @@
 
 ##Benefits
 
-* Common and light DAL interfaces make your application layer code independent of the specific DAL technology.
+* Common and light data access interface enables your client code to be independent of the specific DAL technology (e.g. NHibernate).
 * Easier to switch from an existing DAL implementation (e.g. NHibernate) to another (e.g. Entity Framework).
-* Eliminates boilerplate when coordinating DAL (e.g. executing unit of work in a transaction).
+* Eliminates boilerplate in DAL client code (e.g. starting a transaction, or opening a data session).
+* Enables to have both DAL implementations (e.g. ADO.NET + NHibernate) transparent to the DAL client code.
+* Ability to have more than one database/store and transparently bind repository implementation to use the appropiate database/store.
 
 ##Features
 
