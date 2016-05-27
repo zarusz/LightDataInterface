@@ -13,11 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.EntityFr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core", "LightDataInterface.Core\LightDataInterface.Core.csproj", "{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.Autofac", "LightDataInterface.Extra.Autofac\LightDataInterface.Extra.Autofac.csproj", "{07B75B2F-E10E-497E-8AB4-D05435A2459C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.WebApi", "LightDataInterface.Extra.WebApi\LightDataInterface.Extra.WebApi.csproj", "{8C937BE7-303E-43B5-BB61-4F22CD9C4108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core.Test", "LightDataInterface.Core.Test\LightDataInterface.Core.Test.csproj", "{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core.Test", "Tests\LightDataInterface.Core.Test\LightDataInterface.Core.Test.csproj", "{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E76274A-D27C-46DC-AE8A-7419E6BDC9A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07B75B2F-E10E-497E-8AB4-D05435A2459C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C937BE7-303E-43B5-BB61-4F22CD9C4108}.Release|Any CPU.ActiveCfg = Release|Any CPU

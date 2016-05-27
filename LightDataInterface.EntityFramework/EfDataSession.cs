@@ -7,7 +7,8 @@ namespace LightDataInterface.EntityFramework
     public class EfDataSession<T> : BaseDataSession
         where T : DbContext
     {
-        private static readonly ILog Log = LogManager.GetLogger<EfDataSession<T>>();
+        // ReSharper disable once StaticMemberInGenericType
+        private static readonly ILog Log = LogManager.GetLogger(typeof(EfDataSession<>));
 
         protected internal T Db { get; private set; }
 

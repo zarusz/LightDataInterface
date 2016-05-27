@@ -66,11 +66,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LightDataInterface.Core\LightDataInterface.Core.csproj">
+    <ProjectReference Include="..\..\LightDataInterface.Core\LightDataInterface.Core.csproj">
       <Project>{8e76274a-d27c-46dc-ae8a-7419e6bdc9a5}</Project>
       <Name>LightDataInterface.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LightDataInterface\LightDataInterface.csproj">
+    <ProjectReference Include="..\..\LightDataInterface\LightDataInterface.csproj">
       <Project>{a325b54b-8d02-4925-9600-c24d2a138722}</Project>
       <Name>LightDataInterface</Name>
     </ProjectReference>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ using LightDataInterface.Core;
 
 namespace LightDataInterface.Extra.WebApi
 {
-    public class UnitOfWorkAttribute: Attribute, IActionFilter
+    public class UnitOfWorkAttribute : Attribute, IActionFilter
     {
         private static readonly ILog Log = LogManager.GetLogger<UnitOfWorkAttribute>();
 
@@ -24,20 +25,24 @@ namespace LightDataInterface.Extra.WebApi
 
         #endregion
 
-        #region Implementation of IExceptionFilter
-
-        public Task ExecuteExceptionFilterAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
-
         #region Implementation of IFilter
         public async Task<HttpResponseMessage> ExecuteActionFilterAsync(HttpActionContext actionContext, CancellationToken cancellationToken, Func<Task<HttpResponseMessage>> continuation)
         {
-            var dataSessionHolder = (DataSessionHolder) actionContext.Request.GetDependencyScope().GetService(typeof (DataSessionHolder));
-            var dataSession = dataSessionHolder.GetByName(DataName);
+            /*
+            var dataSessionHolder = (DataSessionHolder)actionContext.Request.GetDependencyScope().GetService(typeof(DataSessionHolder));
+            if (dataSessionHolder == null)
+            {
+                throw new DataAccessException($"The {typeof(DataSessionHolder).Name} could not retrieved from the request's IDependencyScope. Check your DI configuration and make sure the holder is registered properly.");
+            }
+            */
+
+
+            var dataSession = DataSession.Current(DataName);
+            if (dataSession == null)
+            {
+                throw new DataAccessException("The DataSession could not retrieved from the current context. Check your configuration and make sure the holder is registered properly.");
+            }
+
             Log.Debug("Creating unit of work.");
             using (var unitOfWork = dataSession.CreateUnitOfWork())
             {
