@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 using Common.Logging;
-using LightDataInterface.Core;
 
 namespace LightDataInterface.Extra.WebApi
 {

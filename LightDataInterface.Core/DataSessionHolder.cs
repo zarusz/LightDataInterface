@@ -5,9 +5,9 @@ using Common.Logging;
 namespace LightDataInterface.Core
 {
     /// <summary>
-    /// Simple holder to store all the active <see cref="IDataSession"/>.
-    /// The object is meant to be bound to thread or web-request.
-    /// This class is NOT Thread-safe.
+    /// Simple holder to store all the active named <see cref="IDataSession"/>-s.
+    /// The object is meant to be bound to a thread or a web-request.
+    /// This class is NOT thread-safe.
     /// </summary>
     public class DataSessionHolder : IDisposable
     {
@@ -45,6 +45,11 @@ namespace LightDataInterface.Core
             return ctx;
         }
 
+        /// <summary>
+        /// Adds a named <see cref="IDataSession"/> to the holder.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="context"></param>
         public void SetByName(string name, IDataSession context)
         {
             _dataSessionByName[name] = context;

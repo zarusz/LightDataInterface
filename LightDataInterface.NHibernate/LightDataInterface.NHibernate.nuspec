@@ -13,6 +13,6 @@
     <description>$description$</description>
     <releaseNotes>Initial version</releaseNotes>
     <copyright>Copyright 2016</copyright>
-    <tags>Data DataAccess ORM Facade Interface EF EntityFramework</tags>
+    <tags>Data DataAccess ORM Facade Interface NHibernate</tags>
   </metadata>
 </package>

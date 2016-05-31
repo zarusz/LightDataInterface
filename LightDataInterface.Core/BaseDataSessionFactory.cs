@@ -17,9 +17,10 @@ namespace LightDataInterface.Core
         public virtual void Dispose()
         {
             _log.Debug("Disposing.");
+            OnDispose();
         }
 
-        protected abstract IDataSession CreateDataSessionInternal(string name);
+        #endregion
 
         public IDataSession CreateDataSession(string name)
         {
@@ -33,6 +34,8 @@ namespace LightDataInterface.Core
             return dataContext;
         }
 
-        #endregion
+        protected abstract IDataSession CreateDataSessionInternal(string name);
+
+        protected abstract void OnDispose();
     }
 }

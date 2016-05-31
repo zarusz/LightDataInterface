@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F406AA4F-7C0E-457C-809B-F9736BD97E2C}</ProjectGuid>
+    <ProjectGuid>{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LightDataInterface.EntityFramework</RootNamespace>
-    <AssemblyName>LightDataInterface.EntityFramework</AssemblyName>
+    <RootNamespace>LightDataInterface.NHibernate</RootNamespace>
+    <AssemblyName>LightDataInterface.NHibernate</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,16 +39,15 @@
       <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -57,12 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EfDataSessionAware.cs" />
     <Compile Include="DataSessionAwareExtensions.cs" />
     <Compile Include="DataSessionExtensions.cs" />
-    <Compile Include="EfDataSession.cs" />
-    <Compile Include="EfUnitOfWork.cs" />
-    <Compile Include="EfDataSessionFactory.cs" />
+    <Compile Include="NHibernateDataSessionAware.cs" />
+    <Compile Include="NHibernateDataSession.cs" />
+    <Compile Include="NHibernateDataSessionFactory.cs" />
+    <Compile Include="NHibernateUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,12 +71,11 @@
       <Name>LightDataInterface.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\LightDataInterface\LightDataInterface.csproj">
-      <Project>{A325B54B-8D02-4925-9600-C24D2A138722}</Project>
+      <Project>{a325b54b-8d02-4925-9600-c24d2a138722}</Project>
       <Name>LightDataInterface</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

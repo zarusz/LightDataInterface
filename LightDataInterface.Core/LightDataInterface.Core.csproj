@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="BaseDataSession.cs" />
     <Compile Include="BaseUnitOfWork.cs" />
+    <Compile Include="DataSessionAware.cs" />
+    <Compile Include="DelegatingDataSessionFactory.cs" />
     <Compile Include="DataSessionAwareExtensions.cs" />
     <Compile Include="BaseDataSessionFactory.cs" />
     <Compile Include="DataSessionHolder.cs" />
