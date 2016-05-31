@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LightDataInterface.Core")]
-[assembly: AssemblyDescription("Common interface to work with your favorite DAL framework.")]
+[assembly: AssemblyTitle("LightDataInterface.NHibernate")]
+[assembly: AssemblyDescription("NHibernate provider for LightDataInterface.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("zarusz")]
-[assembly: AssemblyProduct("LightDataInterface.Core")]
+[assembly: AssemblyProduct("LightDataInterface.NHibernate")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8e76274a-d27c-46dc-ae8a-7419e6bdc9a5")]
+[assembly: Guid("4e7eccfc-7575-4a6f-ad60-90c4fe5d274d")]
 
 // Version information for an assembly consists of the following four values:
 //

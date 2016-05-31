@@ -4,4 +4,5 @@ set nuget_source=local
 nuget push .\%dist_folder%\LightDataInterface.0.3.*.nupkg -Source %nuget_source%
 nuget push .\%dist_folder%\LightDataInterface.Core.0.3.*.nupkg -Source %nuget_source%
 nuget push .\%dist_folder%\LightDataInterface.EntityFramework.0.3.*.nupkg -Source %nuget_source%
+nuget push .\%dist_folder%\LightDataInterface.NHibernate.0.3.*.nupkg -Source %nuget_source%
 nuget push .\%dist_folder%\LightDataInterface.Extra.WebApi.0.3.*.nupkg -Source %nuget_source%

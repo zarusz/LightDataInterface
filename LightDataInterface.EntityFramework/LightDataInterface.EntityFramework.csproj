@@ -61,7 +61,6 @@
     <Compile Include="DataSessionAwareExtensions.cs" />
     <Compile Include="DataSessionExtensions.cs" />
     <Compile Include="EfDataSession.cs" />
-    <Compile Include="EfDataSessionFactory.cs" />
     <Compile Include="EfUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

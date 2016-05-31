@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface", "LightDataInterface\LightDataInterface.csproj", "{A325B54B-8D02-4925-9600-C24D2A138722}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Extra.WebApi", "LightDataInterface.Extra.WebApi\LightDataInterface.Extra.WebApi.csproj", "{8C937BE7-303E-43B5-BB61-4F22CD9C4108}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.Core.Test", "Tests\LightDataInterface.Core.Test\LightDataInterface.Core.Test.csproj", "{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDataInterface.NHibernate", "LightDataInterface.NHibernate\LightDataInterface.NHibernate.csproj", "{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E37EC9-A4DC-4A5D-BFC0-A6FD66C8109A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7ECCFC-7575-4A6F-AD60-90C4FE5D274D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
