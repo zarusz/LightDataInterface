@@ -5,6 +5,9 @@ using NHibernate;
 
 namespace LightDataInterface.NHibernate
 {
+    /// <summary>
+    /// <see cref="IDataSessionFactory"/> adapter for NHibernate's <see cref="ISessionFactory"/>.
+    /// </summary>
     public class NHibernateDataSessionFactory : BaseDataSessionFactory
     {
         private static readonly ILog Log = LogManager.GetLogger<NHibernateDataSessionFactory>();

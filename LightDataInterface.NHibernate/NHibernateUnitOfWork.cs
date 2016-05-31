@@ -4,6 +4,9 @@ using NHibernate;
 
 namespace LightDataInterface.NHibernate
 {
+    /// <summary>
+    /// <see cref="IUnitOfWork"/> adapter for NHibernate's <see cref="ITransaction"/>.
+    /// </summary>
     public class NHibernateUnitOfWork : BaseUnitOfWork
     {
         private static readonly ILog Log = LogManager.GetLogger<NHibernateUnitOfWork>();

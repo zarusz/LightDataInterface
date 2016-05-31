@@ -57,11 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSessionAware.cs" />
+    <Compile Include="EfDataSessionAware.cs" />
     <Compile Include="DataSessionAwareExtensions.cs" />
     <Compile Include="DataSessionExtensions.cs" />
     <Compile Include="EfDataSession.cs" />
     <Compile Include="EfUnitOfWork.cs" />
+    <Compile Include="EfDataSessionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

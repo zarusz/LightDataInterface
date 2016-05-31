@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSessionAwareExtensions.cs" />
+    <Compile Include="DataSessionExtensions.cs" />
+    <Compile Include="NHibernateDataSessionAware.cs" />
     <Compile Include="NHibernateDataSession.cs" />
     <Compile Include="NHibernateDataSessionFactory.cs" />
     <Compile Include="NHibernateUnitOfWork.cs" />

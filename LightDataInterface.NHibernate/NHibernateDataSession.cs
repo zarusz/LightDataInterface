@@ -4,6 +4,9 @@ using NHibernate;
 
 namespace LightDataInterface.NHibernate
 {
+    /// <summary>
+    /// <see cref="IDataSession"/> adapter for NHibernate's <see cref="ISession"/>.
+    /// </summary>
     public class NHibernateDataSession : BaseDataSession
     {
         private static readonly ILog Log = LogManager.GetLogger<NHibernateDataSession>();

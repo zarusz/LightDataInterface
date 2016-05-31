@@ -67,7 +67,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DataSessionHolderTest.cs" />
-    <Compile Include="EfDataSessionFactoryTest.cs" />
+    <Compile Include="DelegatingDataSessionFactoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("LightDataInterface.Extra.WebApi")]
-[assembly: AssemblyDescription("Common interface to work with your favorite DAL framework.")]
+[assembly: AssemblyDescription("Useful LightDataInterface extensions for WebApi.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("zarusz")]
 [assembly: AssemblyProduct("LightDataInterface.Extra.WebApi")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyInformationalVersion("0.3.14")]
+[assembly: AssemblyInformationalVersion("0.4.1")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

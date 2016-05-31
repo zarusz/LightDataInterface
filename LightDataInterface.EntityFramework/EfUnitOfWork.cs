@@ -4,6 +4,10 @@ using LightDataInterface.Core;
 
 namespace LightDataInterface.EntityFramework
 {
+    /// <summary>
+    /// <see cref="IUnitOfWork"/> adapter for Entity Framework's <see cref="DbContextTransaction"/>.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class EfUnitOfWork<T> : BaseUnitOfWork
         where T : DbContext
     {
