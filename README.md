@@ -1,6 +1,8 @@
 # LightDataInterface
 
-##Benefits
+This project is in BETA stage.
+
+## Benefits
 
 * Common and light data access interface enables your client code to be independent of the specific DAL technology (e.g. NHibernate).
 * Easier to switch from an existing DAL implementation (e.g. NHibernate) to another (e.g. Entity Framework).
@@ -8,9 +10,9 @@
 * Enables to have both DAL implementations (e.g. ADO.NET + NHibernate) transparent to the DAL client code.
 * Ability to have more than one database/store and transparently bind repository implementation to use the appropiate database/store.
 
-##Features
+## Features
 
-###Common interfaces
+### Common interfaces
 The DAL client code (e.g. application layer) uses minimalistic and straightforward interfaces to coordinate the data access layer. No dependencies on any particular framework (e.g. NHibernate, ADO.NET or EntityFramework).
 
 * `IDataSession`
@@ -23,7 +25,7 @@ When you decide to move to a different data access implementation or have two di
 
 Package: `LightDataInterface`
 
-###Providers for your favorite data access framework
+### Providers for your favorite data access framework
 
 * Adapter for EntityFramework
   * Package: `LightDataInterface.EntityFramework`
@@ -75,7 +77,8 @@ ToDo
 
 ToDo
 
-##Packages
+## Packages
+
 Name | Descripton | Dependencies
 ------------ | ------------- | -------------
 `LightDataInterface` | The interfaces to work with LightDataInterface | `Common.Logging`
@@ -83,6 +86,6 @@ Name | Descripton | Dependencies
 `LightDataInterface.EntityFramework` | Provider for Entity Framework | `LightDataInterface.Core` `EntityFramework`
 `LightDataInterface.Extra.WebApi` | Adds integration goodies for WebApi | `LightDataInterface.Core` `Microsoft.AspNet.WebApi.Core`
 
-##License
+## License
 
 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
